@@ -20,7 +20,7 @@ const Signup = (props) => {
     }
     const {name, email, password} = credentials;
     try {
-      const response = await fetch('https://new-test-5.onrender.com/api/auth/createuser', {
+      const response = await fetch('http://localhost:5000/api/auth/createuser', {
         method: 'POST',
         credentials: 'include',
         headers: {
